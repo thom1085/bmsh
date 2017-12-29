@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+}
+
+.mshnb {
+    display: none;
+    background-image: url("../img/mshnb.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 950px;
+    top: 10px;
+    width: 750px;
+    height: 750px;
+    border:none;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0px 0px 51px 39px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 51px 39px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 51px 39px rgba(0,0,0,1);
+}
+
+.boutique {
+    display: none;
+    background-image: url('../img/boutique.jpg');
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    left: 150px;
+    top: 300px;
+    width: 480px;
+    height: 480px;
+    border:none;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0px 0px 51px 39px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 51px 39px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 51px 39px rgba(0, 0, 0, 1);
+}
+
+video {
+    position: absolute;
+    left: 700px;
+    top: 380px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}

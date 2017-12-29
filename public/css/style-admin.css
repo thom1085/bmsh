@@ -1,0 +1,130 @@
+/* style css de la page ADMIN */
+
+/* ------------------- box-sizing ------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ------------------- GLOBAL ------------------- */
+body {
+	width: 100%;
+	font-family: 'Barlow Condensed', sans-serif;
+	margin: 10px;
+	color: #5F677D;
+}
+
+/* ------------------- LOGO ------------------- */
+header {
+	/* poitionné à droite : contient le logo */
+	width: 200px;
+	height: 100%;
+	position: fixed;
+	left: 87%;
+}
+
+.logo {
+	padding: 15px;
+	text-transform: uppercase;
+	font-size: 1em;
+	z-index: 500 !important;
+}
+
+.logo a {
+	text-decoration: none;
+	color: #5F677D;
+}
+
+.logo p {
+	margin: 0;
+}
+
+.incline {
+	writing-mode: vertical-rl;
+  	text-orientation: sideways;
+	transform: rotate(-180deg);
+	font-size: 4.5em;
+	text-align: left;
+	letter-spacing: 7px;
+}
+
+.logo-pierre {
+	width: 160px;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 20px;
+	font-family: 'Cookie', cursive;
+}
+
+main {
+	border: 1px solid lightgrey;
+	width: 85%;
+}
+
+/* menu de navigation */
+.nav-admin ul {
+	font-size:2em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 0;
+	padding: 0 15px;
+}
+
+.nav-admin li {
+	list-style-type: none;
+}
+
+.nav-admin a {
+	font-family: 'Cookie', cursive;
+	text-decoration: none;
+	color: #5F677D;
+	transition: 0.3s ease;
+}
+
+.nav-admin a:hover {
+	color: #F26D31;
+	border-top: 3px solid #F26D31;
+	border-bottom: 3px solid #F26D31;
+	padding: 3px 0;
+}
+
+/* section principale */
+
+
+
+/* ------------------- FOOTER ------------------- */
+footer {
+	width: 85%;
+	margin: 40px auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 15px;
+}
+
+footer .nav-admin {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	font-size: 1.5em;
+}
+
+footer .nav-admin a {
+	margin: 20px;
+	text-decoration: none;
+}
+
+footer p {
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
