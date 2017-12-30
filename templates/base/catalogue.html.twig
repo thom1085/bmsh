@@ -23,13 +23,7 @@
                 <!--<ul class="grid">-->
             <?php
             error_reporting(E_ALL);
-            $requeteSQL =
-<<<CODESQL
-SELECT *
-FROM produits
-WHERE categorie = '1'
-ORDER BY produit
-CODESQL;
+            $requeteSQL = "SELECT * FROM produits WHERE categorie = '1' ORDER BY produit CODESQL";
             $afficherProduits = connexionBDD($requeteSQL, []);
             foreach($afficherProduits as $element) {
                 // debug
@@ -40,7 +34,7 @@ CODESQL;
                 extract($element);
                 // $description = mb_strimwidth($description, 0, 50, '... ').'<a href="template-produit.php?idproduit=' . $idproduit . '"></a>';
                 echo
-    <<<CODEHTML
+<<<CODEHTML
     <figure class="effect-winston">
         <img src="$photo" alt="">
         <figcaption>
@@ -48,7 +42,7 @@ CODESQL;
             <p>Liste allergènes</p>
         </figcaption>
     </figure>
-    CODEHTML;
+CODEHTML;
             }
             ?>
                 <!--</ul>-->

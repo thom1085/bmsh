@@ -11,9 +11,10 @@ $(document).ready(function() {
 
 // redirection
 const xhr = new XMLHttpRequest();
+xhr.open("GET", "./accueil", true);
 xhr.onload = function() {
-    windows.setInterval(function(){
-        window.location.href = "./accueil";},4500)
-    }
-xhr.open("get","./accueil",true)
+    setInterval(function() {
+    window.location = "./accueil"
+    }, 3000)
+}
 xhr.send()

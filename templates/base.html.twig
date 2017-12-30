@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}Maison Saint-Honoré{% endblock %}</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
     {% block stylesheets %}
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     {% endblock %}
@@ -14,11 +15,11 @@
         <header></header>
         {% block body %}{% endblock %}
         {% block footer %}
-            Maison Saint-Honoré &copy; 2011-2017
+            Maison Saint-Honoré &copy; 2011-{{ "now"|date("Y")}}
         {% endblock %}
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         {% block javascripts %}
+        <script src="{{ asset('js/intro.js') }}"></script>
         <script src="{{ asset('js/script.js') }}"></script>
         {% endblock %}
     </body>

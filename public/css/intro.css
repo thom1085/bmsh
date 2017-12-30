@@ -2,38 +2,31 @@ body {
     background-color: black;
 }
 
-.mshnb {
+.mshnb,.boutique{
     display: none;
-    background-image: url("../img/mshnb.jpg");
     background-size: cover;
     background-position: center;
     position: absolute;
-    left: 950px;
-    top: 10px;
-    width: 750px;
-    height: 750px;
     border:none;
     border-radius: 50%;
     -webkit-box-shadow: inset 0px 0px 51px 39px rgba(0,0,0,1);
     -moz-box-shadow: inset 0px 0px 51px 39px rgba(0,0,0,1);
     box-shadow: inset 0px 0px 51px 39px rgba(0,0,0,1);
 }
+.mshnb {
+    background-image: url("../img/mshnb.jpg");
+    left: 950px;
+    top: 10px;
+    width: 750px;
+    height: 750px;
+}
 
 .boutique {
-    display: none;
-    background-image: url('../img/boutique.jpg');
-    position: absolute;
-    background-position: center;
-    background-size: cover;
+    background-image: url("../img/boutique.jpg");
     left: 150px;
     top: 300px;
     width: 480px;
     height: 480px;
-    border:none;
-    border-radius: 50%;
-    -webkit-box-shadow: inset 0px 0px 51px 39px rgba(0, 0, 0, 1);
-    -moz-box-shadow: inset 0px 0px 51px 39px rgba(0, 0, 0, 1);
-    box-shadow: inset 0px 0px 51px 39px rgba(0, 0, 0, 1);
 }
 
 video {

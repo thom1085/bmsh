@@ -6,15 +6,12 @@ html {
   height:100%;
 }
 
-
 body {
   background: radial-gradient(center center, circle cover, #c9c2b6, #5F677D);
   background: -moz-radial-gradient(center center, circle cover, #c9c2b6 0%, #5F677D 100%);
   background: -webkit-radial-gradient(center center, circle cover, #c9c2b6 0%, #5F677D 100%);
   font-family: Arial, helvetica, 'sans';
 }
-
-
 
 main {
   font-family: 'Barlow Condensed', sans-serif;
@@ -39,7 +36,6 @@ main {
     -webkit-box-shadow: inset 0 0 25px #000000;
     box-shadow:         inset 0 0 25px #000000;
    opacity: 0;
-
     -webkit-transition: opacity 3s ease-in;
        -moz-transition: opacity 3s ease-in;
         -ms-transition: opacity 3s ease-in;
@@ -107,7 +103,6 @@ a:hover{
 }
 
 .logo a {
-	text-decoration: none;
 	color: #f26D31;
 }
 
@@ -208,7 +203,7 @@ div img{
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
+
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
@@ -227,16 +222,14 @@ div img{
 }
 
 #ensemble{
-	z-index: 7;	
+	z-index: 7;
 }
 
 #flou{
 	z-index: 10;
 }
 
-
 /* -----------------------------------------------------------------------*/
-
 
 .clock {
   z-index:6;
@@ -390,7 +383,7 @@ div img{
   top: 56px;
   transform-origin: 50% 40px;
   margin-left:-3px;
-  height: 50px; 
+  height: 50px;
   background:#68645b;
 }
 
@@ -405,7 +398,7 @@ div img{
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
+
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
@@ -458,9 +451,9 @@ div img{
 
 .poloroid {
   width: 15%;
-  margin-left: 30px;    
+  margin-left: 30px;
 }
- 
+
 .poloroid img {
   border: 10px solid #fff;
   border-bottom: 45px solid #fff;

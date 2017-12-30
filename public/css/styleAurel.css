@@ -21,12 +21,15 @@ body {
 	font-family: 'Cookie', cursive; OUI
 	font-family: 'Dancing Script', cursive; OUI
 	font-family: 'Fredericka the Great', cursive; OUI
-	font-family: 'Rochester', cursive; OUI	
+	font-family: 'Rochester', cursive; OUI
 	font-family: 'Sofia', cursive; OUI
 	font-family: 'Stalemate', cursive; OUI
 	font-family: 'Vibur', cursive; OUI
 */
-
+a{
+	text-decoration: none;
+	color: #5F677D;
+}
 h2 {
 	font-size: 2.5em;
 	font-family: 'Cookie', cursive;
@@ -57,11 +60,6 @@ header {
 	text-transform: uppercase;
 	font-size: 1em;
 	z-index: 500 !important;
-}
-
-.logo a {
-	text-decoration: none;
-	color: #5F677D;
 }
 
 .logo p {
@@ -97,7 +95,7 @@ header {
 
 /* en-tête avec image */
 .entete {
-	width: 100%;	
+	width: 100%;
 }
 
 .entete img {
@@ -128,10 +126,8 @@ header {
 	list-style-type: none;
 }
 
-.nav-principal a {	
-	text-decoration: none;
+.nav-principal a {
 	font-size: 1.3em;
-	color: #5F677D;
 	transition: 0.3s ease;
 }
 
@@ -226,8 +222,6 @@ header {
 	box-shadow: 0px 0px 5px #F26D31;
 	transition: all 0.5s ease;
 	margin: 5px auto;
-	text-decoration: none;
-	color: #5F677D;
 }
 
 .catalogue a:hover {
@@ -240,7 +234,7 @@ header {
 
 /* -------------------  page accueil - flexslider ------------------- */
 .slider {
-	width: 90%;	
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -429,12 +423,6 @@ form button:hover {
 	margin: 30px 0;
 	width: 290px;
 }
-
-.contenu-catalogue a {
-	text-decoration: none;
-	color: #5F677D;
-}
-
 
 /* Affichage CSS avancé */
 /* http://epicadesign.fr/demos/HoverEffectImg/index.html */
@@ -665,7 +653,7 @@ figure.effect-winston{
 }
 
 
-/* 
+/*
 .adresses article {
 	display: flex;
 	flex-direction: column;
@@ -699,7 +687,6 @@ footer {
 .nav-admin a {
 	font-size: 0.8em;
 	margin: 20px;
-	text-decoration: none;
 }
 
 footer p {
