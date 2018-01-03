@@ -1,0 +1,23 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Modifier un produit existant{% endblock %}
+
+{% block body %}
+
+Liste des produits existants
+<table>
+    <tr>
+        <th></th>
+        <th>Produits</th>
+        <th>Categorie</th>
+        <th>Allergene</th>
+        <th>label</th>
+    </tr>
+    {% for produit in produits %}
+    <tr>
+        <td>{% cat.produits %}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

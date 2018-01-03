@@ -6,6 +6,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class DefaultController extends Controller{
     /**
@@ -16,9 +17,16 @@ class DefaultController extends Controller{
         return $this->render("base/index.html.twig");
     }
     /**
+     * @Route("/404", name="error-page")
+     */
+    public function show404(){
+        // if page n'existe pas
+        return $this->render("404.html.twig");
+    }
+    /**
      * @Route("/{page}", name="{page}")
      */
-    // rooting de toutes les pages, il faut cependant que le fichier existe
+    // rooting de toutes les pages, il faut cependant que le fichier existe dans le repertoire base
     public function showPage($page){
         return $this->render("base/$page.html.twig");
     }
@@ -26,12 +34,9 @@ class DefaultController extends Controller{
      * @Route("contact", name="contact")
      */
     public function callMeMaybe(){
-        // ici il y aura un formulaire
+        // ici il y aura un formulaire de contact
         // https://symfony.com/doc/current/forms.html
         // https://openclassrooms.com/courses/developpez-votre-site-web-avec-le-framework-symfony/creer-des-formulaires-avec-symfony
         return $this->render("base/contact.html.twig");
-    }
-    public function show404($page){
-        // page d'erreur
     }
 }

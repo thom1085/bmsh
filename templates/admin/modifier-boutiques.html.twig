@@ -1,0 +1,25 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Modifier nos boutiques{% endblock %}
+
+{% block body %}
+<a href="">Ajouter une nouvelle boutique</a>
+
+Liste des boutiques déjà existante
+<table>
+    <tr>
+        <th></th>
+        <th>Boutique</th>
+        <th>Adresse</th>
+        <th>Code Google Map</th>
+    </tr>
+    {% for boutique in boutiques %}
+    <tr>
+        <td>{% boutiques.boutique %}</td>
+        <td>{% boutiques.adresse %}</td>
+        <td>{% boutiques.gmap %}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

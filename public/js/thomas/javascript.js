@@ -1,3 +1,6 @@
+// TO DO : mettre en variable les parametres et éviter les répétitions
+// if possible remettre en JS et pas en JQuery
+
 $(function(){
     //LOADING.....
     $("#parent").addClass("load");
@@ -11,8 +14,8 @@ $(function(){
                     opacity: 1
             }, 0)
         });
-  }); 
-    }); 
+  });
+    });
        $("#pierre").mouseleave(function(){
         $("#ensemble").animate({
             opacity: 1
@@ -21,9 +24,9 @@ $(function(){
             $("#light1").animate({
                     opacity: 0
                 }, 0)
-            }); 
+            });
         });
-    //FUNCTION HISTORIRE
+    //FUNCTION HISTOIRE
     $("#catalogue").mouseenter(function(){
          $("#ensemble").animate({
             opacity: 0
@@ -32,7 +35,7 @@ $(function(){
             $("#light2").animate({
                     opacity: 1
                 }, 0)
-            }); 
+            });
 
         });
            $("#catalogue").mouseleave(function(){
@@ -43,10 +46,8 @@ $(function(){
             $("#light2").animate({
                     opacity: 0
                 }, 0)
-            }); 
-            
+            });
         });
-    
     ///FUNCTION ADDRESS
       $("#histoire").mouseenter(function(){
          $("#ensemble").animate({
@@ -56,8 +57,7 @@ $(function(){
             $("#light3").animate({
                     opacity: 1
                 }, 0)
-            }); 
-            
+            });
         });
            $("#histoire").mouseleave(function(){
         $("#ensemble").animate({
@@ -67,11 +67,10 @@ $(function(){
             $("#light3").animate({
                     opacity: 0
                 }, 0)
-            }); 
-            
+            });
         });
     /// function philosph
-    
+
      $("#kid").mouseenter(function(){
          $("#ensemble").animate({
             opacity: 0
@@ -80,8 +79,7 @@ $(function(){
             $("#light4").animate({
                     opacity: 1
                 }, 0)
-            }); 
-            
+            });
         });
            $("#kid").mouseleave(function(){
         $("#ensemble").animate({
@@ -91,8 +89,7 @@ $(function(){
             $("#light4").animate({
                     opacity: 0
                 }, 0)
-            }); 
-            
+            });
         });
     ///FUNCTION CONTACT
       $("#contact").mouseenter(function(){
@@ -103,7 +100,7 @@ $(function(){
             $("#light4").animate({
                     opacity: 1
                 }, 0)
-            }); 
+            });
                $("#contact").mouseleave(function(){
         $("#ensemble").animate({
             opacity: 1
@@ -112,53 +109,49 @@ $(function(){
             $("#light4").animate({
                     opacity: 0
                 }, 0)
-            }); 
-            
+            });
         });
-            
-        });
-     ///END   
-  
-     
- ///annimation elements   
-    
+    });
+     ///END
+
+ ///animation elements
+
   $("#pierre").mouseenter(function(){
       $("#pierrephoto").addClass("wobble")
-  }); 
+  });
    $("#pierre").mouseleave(function(){
       $("#pierrephoto").removeClass("wobble")
-  }); 
+  });
 
   $("#contact").mouseenter(function(){
       $("#telephone").addClass("phonecall")
-  }); 
+  });
    $("#contact").mouseleave(function(){
       $("#telephone").removeClass("phonecall")
-  }); 
-    
+  });
+
   $("#catalogue").mouseenter(function(){
       $("#label").addClass("wobble")
-  }); 
+  });
    $("#catalogue").mouseleave(function(){
       $("#label").removeClass("wobble")
-  }); 
+  });
    $("#kid").mouseenter(function(){
       $("#boy").addClass("wobble")
-  }); 
+  });
    $("#kid").mouseleave(function(){
       $("#boy").removeClass("wobble")
-  }); 
+  });
      $("#histoire").mouseenter(function(){
       $("#old").addClass("wobble")
-  }); 
+  });
    $("#histoire").mouseleave(function(){
       $("#old").removeClass("wobble")
-  }); 
-  
+  });
+
 
 ///clock
 
-    
 var oClockAnalog = {
     aSecond:         [],
     dtDate:          new Date(),
@@ -225,17 +218,18 @@ var oClockAnalog = {
         }
 
         // seconds
-        if (this.iCurrSecond != this.dtDate.getSeconds()) {
-            var iRotateFrom = (6 * this.iCurrSecond);
-            this.iCurrSecond = this.dtDate.getSeconds();
-            var iRotateTo = (6 * this.iCurrSecond);
+        // if (this.iCurrSecond != this.dtDate.getSeconds()) {
+        //     var iRotateFrom = (6 * this.iCurrSecond);
+        //     this.iCurrSecond = this.dtDate.getSeconds();
+        //     var iRotateTo = (6 * this.iCurrSecond);
 
-            // push steps into array
-            var iDiff = this.fStepSize(iRotateTo, iRotateFrom);
-            for (var i = 0; i < this.iStepSize; i++) {
-                iRotateFrom -= iDiff;
-                this.aSecond.push(Math.round(iRotateFrom));
-            }
-        }
+        //     // push steps into array
+        //     var iDiff = this.fStepSize(iRotateTo, iRotateFrom);
+        //     for (var i = 0; i < this.iStepSize; i++) {
+        //         iRotateFrom -= iDiff;
+        //         this.aSecond.push(Math.round(iRotateFrom));
+        //     }
+        // }
     }
-};   ClockInit();
+};
+ClockInit();
