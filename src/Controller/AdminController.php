@@ -10,13 +10,7 @@ class AdminController extends Controller{
      * @Route("/admin", name="admin-page")
      */
     function showAdmin(){
-        // ne marche pas encore faut le formulaire
-        // if ( $_POST["password"] === "admin"){
-             return $this->render("admin/admin.html.twig");
-        //     }
-        // else{
-        //     echo "TITS OR GTFO";
-        // }
+        return $this->render("admin/admin.html.twig");
     }
     /**
      * @Route("/admin/{page}", name="admin-{page}")

@@ -19,16 +19,22 @@ class DefaultController extends Controller{
     /**
      * @Route("/404", name="error-page")
      */
-    public function show404(){
-        // if page n'existe pas
-        return $this->render("404.html.twig");
-    }
+    // public function show404(){
+    //     $page = false;
+    //     if (!$page){
+    //     throw $this->createNotFoundHttpException();
+    //     }
+    //     return $this->render("404.html.twig");
+    // }
     /**
      * @Route("/{page}", name="{page}")
      */
     // rooting de toutes les pages, il faut cependant que le fichier existe dans le repertoire base
     public function showPage($page){
         return $this->render("base/$page.html.twig");
+        if (!$tpl = false){
+            return $this->render("404.html.twig");
+        }
     }
     /**
      * @Route("contact", name="contact")
